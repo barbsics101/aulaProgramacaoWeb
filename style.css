@@ -72,9 +72,13 @@ nav a {
 }
 
 
+<<<<<<< HEAD
 /* ==========================
    Hero Section - Index
    ========================== */
+=======
+
+>>>>>>> 7cbe5c7eca75e0ef94470941ca1a3165337e7080
 .hero {
     background: linear-gradient(rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8)),
                 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f0f0f0" width="1200" height="600"/></svg>');
@@ -121,6 +125,7 @@ nav a {
     margin-bottom: 2rem;
 }
 
+<<<<<<< HEAD
 
 
 .cta-buttons {
@@ -137,6 +142,21 @@ nav a {
 .btn-primary, .btn-secondary {
     flex: 1 1 200px; /* largura mínima 200px, cresce se houver espaço */
     max-width: 250px; /* não fique muito largo */
+=======
+.cta-buttons{
+    display: flex;
+    flex-direction: row;/*lado a lado*/
+    gap: 1.5rem; /* espaços entre os botões*/
+    justify-content: center;/* centralizados os horizontes*/
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.btn-primary, .btn-secondary{
+    flex: 1 1 200px;
+    max-width: 250px;
+>>>>>>> 7cbe5c7eca75e0ef94470941ca1a3165337e7080
     padding: 1rem 2.5rem;
     font-size: 1.2rem;
     font-weight: bold;
@@ -144,12 +164,17 @@ nav a {
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
+<<<<<<< HEAD
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+=======
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+>>>>>>> 7cbe5c7eca75e0ef94470941ca1a3165337e7080
     position: relative;
     overflow: hidden;
     text-align: center;
 }
 
+<<<<<<< HEAD
 
 .btn-primary {
     background: #667eea;
@@ -158,10 +183,18 @@ nav a {
 
 
 .btn-secondary {
+=======
+.btn-primary{
+    background: #667eea;
+    color: white;
+}
+.btn-secondary{
+>>>>>>> 7cbe5c7eca75e0ef94470941ca1a3165337e7080
     background: #764ba2;
     color: white;
 }
 
+<<<<<<< HEAD
 
 .btn-primary:hover, .btn-secondary:hover {
     transform: translateY(-3px) scale(1.05);
@@ -190,11 +223,37 @@ nav a {
 
 
 form fieldset {
+=======
+.btn-primary:hover, .btn-secondary:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0, 0, 0.3);
+
+}
+.btn-primary::after, .btn-secondary::after{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255,255,255, 0.15);
+    transform: rotate(45deg);
+    transition: all 0.5 ease;
+}
+.btn-primary:hover::after, .btn-secondary:hover::after{
+    top:-20px;
+    left: -20px;
+
+}
+
+form fieldset{
+>>>>>>> 7cbe5c7eca75e0ef94470941ca1a3165337e7080
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
 }
+<<<<<<< HEAD
 
 
 form legend {
@@ -209,31 +268,56 @@ form legend {
 
 
 .form-group label {
+=======
+form legend{
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+form-group{
+    margin-bottom: 1rem;
+
+}
+.form-label{
+>>>>>>> 7cbe5c7eca75e0ef94470941ca1a3165337e7080
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 500;
 }
+<<<<<<< HEAD
 
 
 .form-group input,
 .form-group select,
 .form-group textarea {
+=======
+.form-group input,
+.form-group select,
+.form-group textarea{
+>>>>>>> 7cbe5c7eca75e0ef94470941ca1a3165337e7080
     width: 100%;
     padding: 0.75rem 1rem;
     border-radius: 6px;
     border: 1px solid #ccc;
     font-size: 1rem;
 }
+<<<<<<< HEAD
 
 
 .success-message {
     display: none; 
     margin-bottom: 1rem;
     color: green;
+=======
+.sucess-message{
+    display: none;
+    margin-top: 1rem;
+    color:green;
+>>>>>>> 7cbe5c7eca75e0ef94470941ca1a3165337e7080
     font-weight: bold;
     text-align: center;
 }
 
+<<<<<<< HEAD
 
 footer {
     text-align: center;
@@ -242,5 +326,54 @@ footer {
     margin-top: 3rem;
 }
 
+=======
+footer{
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    margin-top: -3px;
+}
+
+#tabelaVoluntarios table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-family: 'Segoi UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#tabelaVoluntarios th,
+#tabelaVoluntarios td{
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    text-align: center; 
+
+}
+#tabelaVoluntarios th{
+    background-color: #667eea;
+    color: white;
+    font-family: 600;
+}
+#tabelaVoluntarios tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+#tabelaVoluntarios tr:hover{
+    background-color: #e0e0ff;
+}
+#tabelaVoluntarios table{
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0, 1);
+}
+#tabelaVoluntarios p{
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+    padding: 1rem;
+
+} 
+
+
+
+
+>>>>>>> 7cbe5c7eca75e0ef94470941ca1a3165337e7080
 
 
